@@ -1,0 +1,50 @@
+<div class="band-white">
+  <p><i class="fas fa-star"></i> selfcare</p>
+  <div class="buttons-header">
+    <button><i class="fas fa-search"></i></button>
+    <button><i class="fas fa-user-alt"></i></button>
+    <button><i class="fas fa-shopping-cart"></i></button>
+  </div>
+</div>
+
+<div class="banner">
+  <img src="assets/banner.png" />
+</div>
+
+<div class="band-number-products">
+  <p class="promotion">Promoção</p>
+  <p>{{ productsList.length }} produtos</p>
+</div>
+
+<div class="line"></div>
+
+<div class="grid-products" data-aos="fade-right">
+  <div class="products">
+    <div *ngFor="let prod of productsList">
+      <img [src]="prod.image" />
+      <p>{{ prod.title }}</p>
+      <p class="price">{{ prod.price }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <button>Contato</button><br />
+  <button>Termos de serviço</button><br />
+  <button>Política de privacidade</button><br />
+  <button>Cancelamento, troca e reembolso</button>
+
+  <div class="buttons-footer">
+    <button>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </button>
+    <button>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    </button>
+  </div>
+
+  <div class="img-footer">
+    <img src="assets/mastercard.png" class="master" />
+    <img src="assets/visa.png" class="visa" />
+  </div>
+</div>
