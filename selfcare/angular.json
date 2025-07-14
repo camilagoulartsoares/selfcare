@@ -20,12 +20,11 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+          "assets": [
+  "src/assets",
+  "src/favicon.ico"
+]
+,
             "styles": [
               "src/styles.scss"
             ]
